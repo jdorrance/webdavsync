@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<form xmlns="http://www.w3.org/1999/xhtml">
+  <table>
+    <tbody>
+      <tr>
+        <td><label id="label_alias">Alias</label></td>
+        <td><input type="text" name="alias" size="20" /></td>
+      </tr>
+      <tr>
+        <td><label id="label_certificate">Certificate</label></td>
+        <td><input type="file" name="certificate" size="20" /></td>
+      </tr>
+      <tr>
+        <td><label id="label_key">Private key (in DER format)</label></td>
+        <td><input type="file" name="key" size="20" /></td>
+      </tr>
+      <tr>
+        <td><label id="label_key_password">Key password</label></td>
+        <td><input type="password" name="password" size="20" /></td>
+      </tr>
+    </tbody>
+  </table>
+</form>

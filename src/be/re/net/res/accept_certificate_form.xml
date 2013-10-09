@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<form xmlns="http://www.w3.org/1999/xhtml">
+  <div style="margin: 20px">
+    <p id="text_unverified_certificate" style="margin-bottom: 20px">The certificate couldn't be verified.</p>
+    <table>
+      <tbody>
+        <tr>
+          <td><label id="label_accept_certificate">Accept permanently</label></td>
+          <td>
+            <input type="checkbox" name="permanent" checked="false" value="true" />
+          </td>
+          <td />
+          <td />
+          <td />
+          <td />
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</form>

@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project name="WebDAV-Sync" basedir="." default="all">
+
+  <property name="version" value="1_1_4" />
+  <property name="view" value="webdav_sync_release" />
+
+<!--
+  <taskdef name="webdav-sync" classname="be.re.webdav.cmd.SyncAntTask" classpath="${user.home}/bin/webdav_sync.jar" />
+-->
+
+  <target name="all" depends="webdav-sync" />
+
+  <target name="release">
+    <antcall target="clean" />
+    <antcall target="webdav-sync" />
+    <antcall target="pack-source" />
+  </target>
+
+  <target name="build" depends="compile,copy-resources" />
+
+  <target name="clean">
+    <delete dir="classes" />
+    <delete dir="bin" />
+  </target>
+
+  <target name="compile" depends="init">
+    <javac debug="on" debuglevel="lines,vars,source" srcdir="src" destdir="classes">
+      <classpath>
+        <fileset dir="lib" />
+      </classpath>
+    </javac>
+  </target>
+
+  <target name="copy-resources" depends="init">
+    <copy todir="classes">
+      <fileset dir="src" includes="be/**" excludes="**/*.java" />
+    </copy>
+  </target>
+
+  <target name="init">
+    <tstamp />
+    <mkdir dir="classes" />
+    <mkdir dir="bin" />
+<!--
+    <webdav-sync url="https://werner@re.pincette.net/view/${view}/java/src/" directory="src" direction="down" />
+    <webdav-sync url="https://werner@re.pincette.net/view/${view}/java/lib/" directory="lib" direction="down" />
+    <webdav-sync url="https://werner@re.pincette.net/view/${view}/java/applications/webdav_sync/res/" directory="res" direction="down" />
+-->
+  </target>
+
+  <target name="webdav-sync" depends="build">
+    <jar jarfile="bin/webdav_sync${version}.jar" manifest="res/MANIFEST.MF">
+      <fileset dir="classes" />
+      <zipgroupfileset dir="lib" />
+      <fileset dir="src">
+        <include name="META-INF/**" />
+      </fileset>
+      <fileset dir="res">
+        <include name="RE_LICENSE" />
+        <include name="release_notes" />
+      </fileset>
+    </jar>
+  </target>
+
+  <target name="pack-source">
+    <zip destfile="webdav_sync${version}_src.zip">
+      <zipfileset dir="." includes="res/**,lib/**,src/**,build.xml,build.properties" prefix="webdav_sync" />
+    </zip>
+  </target>
+
+</project>

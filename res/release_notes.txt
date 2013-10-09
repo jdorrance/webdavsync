@@ -1,0 +1,194 @@
+Release Notes WebDAV-Sync 1.1.4
+4 October 2013
+
+1. Requirements
+
+You need JRE 1.6 and Ant 1.7 or a higher version to run the application.
+
+2. Installation
+
+You can just run the jar file on the command-line like this:
+
+  java -jar webdav_sync.jar options
+
+Alternatively, you can use it as an Ant task by adding something like the
+following to your Ant script:
+
+  <taskdef
+    name="webdav-sync"
+    classname="be.re.webdav.cmd.SyncAntTask"
+    classpath="<directory>/webdav_sync.jar"/>
+
+See http://www.re.be/webdav_sync/releases.xhtml for more information.
+
+3. Changes
+
+3.1 Changes Since Version 1.1.3
+
+Bug fixes
+
+35: Database corruption is possible when the disk of the local computer is full
+36: An interrupted download or upload can delete the file during the next
+    synchronization cycle
+37: Exception when the server doesn't return etags
+
+3.2 Changes Since Version 1.1.2
+
+Bug fixes
+
+33: PUT response breaks dialogue
+
+3.3 Changes Since Version 1.1.1
+
+Minor changes
+
+- Try DELETE when PUT responds with a 405 (Method not allowed). (feature
+  request 7)
+- Add -no-recursion option, which prohibits recursion into subfolders even if
+  the server supports it. (feature request 8)
+- Add recursive and no-recursion options to the configuration file.
+- Add no-recursion options to the Ant-task.
+
+3.4 Changes Since Version 1.1
+
+Bug fixes
+
+3490849: Not Compatible with SabreDAV 1.5.7
+3586736: Up-sync ignores local last modified timestamps
+
+3.5 Changes Since Version 1.0.6
+
+New features
+
+- Rename file feature that maintains several versions of a file instead of
+  overwriting it, up to a configurable depth.
+- Optional hidden folder to move files and folders in instead of deleting them.
+- Reset option to erase the synchronization history of a directory/URL couple,
+  which makes it look like an initial synchronization.
+
+Bug fixes
+
+3545812: Wrong default HTTP-encoding
+
+Minor changes
+
+- When downloading a file set the timestamp to that of the server.
+
+3.6 Changes Since Version 1.0.5
+
+Bug fixes
+
+3541343: Loop when fetching the tree from the server
+3541344: Local files can be deleted when the connection
+3541346: Missed changes between synchronizations
+3541347: A connection pool problem could cause a false conflict
+3541349: Incorrect handling of conflict between file and directory
+3541350: Wrongly encoded URLS can cause loop
+3541352: Exception when resource is forbidden
+3541353: URI-encoding problem when using the recursion option
+
+Minor changes
+
+- Tolerate the absence of the DAV: namespace for the collection element inside
+  the resourcetype element. This is for egroupware.
+- Cope with URLs that contain characters that should have been URI-encoded.
+  This is for egroupware.
+
+3.7 Changes Since Version 1.0.4
+
+Bug fixes
+
+3529670: Error when interpreting "resourcetype"
+3529671: Exclusions of directories don't work
+
+Minor changes
+
+- Allow the "status" element to precede the "prop" element in a PROPFIND
+  response. Zimbra does this. See also
+  http://bugzilla.zimbra.com/show_bug.cgi?id=74250.
+- Accept URLs from server that are encoded in UTF-8, but without URI-encoding
+  applied to them, which is not correct.
+
+3.8 Changes Since Version 1.0.3
+
+Bug fixes
+
+3466474: Tries to upload the first file and freezes
+3478695: Recursive requests do not work with SOGo
+3497653: Files can't be deleted in bidirectional mode
+
+Minor changes
+
+- Renaming of files and folders on the server can be detected through etags if
+  the server uses them consistently.
+- Add the "be.re.http.no-expect100" system property. This also turns off
+  chunked transfer encoding.
+
+3.9 Changes Since Version 1.0.2
+
+Bug fixes
+
+3429789: In daemon mode upload must monitor file
+3429805: Not syncing with zimbra account
+3431236: Problem with -r option in Zimbra
+
+Minor changes
+
+- The "-r" command-line option has been deprecated. The tool will
+  automatically recur into directories when infinite depth is not supported by
+  the server.
+
+3.10 Changes Since Version 1.0.1
+
+Bug fixes
+
+3003301: Filename syntax of marker file not correct for Windows
+3418929: Remove the authority from the URL in the execution report
+3418934: Apply the exclude patterns also to directories
+
+3.11 Changes Since Version 1.0
+
+Bug fixes
+
+2961113: Don't set "identity" in Content-Encoding header
+2961114: Don't assume collection comes first in PROPFIND response
+3418934: Apply the exclude patterns also to directories
+
+3.12 Changes Since Version 1.0b3
+
+New features
+
+- Possibility to specify filename patterns to exclude from the synchronization.
+  (feature request 2782740)
+- An option to recur into empty directories when the server doesn't support
+  "depth infinity". (feature request 2786511)
+- Works with Apache 2.2.
+
+Bug fixes
+
+2931493: Time-zone error when interpreting HTTP-dates
+2932173: Filenames should be Unicode normalized
+
+3.13 Changes Since Version 1.0b2
+
+New features
+
+- Add optional ACL for upload of new documents.
+
+Bug fixes
+
+- Fix the source package. There were missing files.
+
+3.14 Changes Since Version 1.0b1
+
+New features
+
+- There are now three modes: down, up and bi-directional (feature request
+  1912079).
+- Add the interval option, which makes the tool repeat its function infinitely.
+- Add the configuration file, which can contain several synchronization jobs.
+
+4. Contact Information
+
+Comments and bug reports can be sent to support@re.be. Information about
+the application is available at http://www.re.be/webdav_sync/.

@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<form xmlns="http://www.w3.org/1999/xhtml">
+  <table>
+    <tbody>
+      <tr>
+        <td><select multiple="false" name="certificate" size="10" /></td>
+      </tr>
+    </tbody>
+  </table>
+</form>

@@ -1,0 +1,5 @@
+text/html; cmd /c start %u
+application/xhtml+xml; cmd /c start %u
+*/*; cmd /c %s
+*; cmd /c %s
+application/octet-stream; cmd /c %s

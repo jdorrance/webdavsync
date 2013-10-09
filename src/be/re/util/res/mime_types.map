@@ -1,0 +1,246 @@
+# This file controls what Internet media types are sent to the client for
+# given file extension(s).  Sending the correct media type to the client
+# is important so they know how to handle the content of the file.
+# For more information about Internet media types, please read 
+# RFC 2045, 2046, 2047, 2048, and 2077.  The Internet media type
+# registry is at <ftp://ftp.iana.org/assignments/media-types/>.
+
+# MIME type			Extension
+application/EDI-Consent
+application/EDI-X12
+application/EDIFACT
+application/activemessage
+application/andrew-inset	ez EZ
+application/applefile
+application/atomicmail
+application/atom+xml		atom ATOM
+application/cals-1840
+application/commonground
+application/cybercash
+application/cu-seeme		csm cu CSM CU
+application/dca-rft
+application/dec-dx
+application/epub+zip		epub EPUB
+application/eshop
+application/ghostview
+application/hyperstudio
+application/iges
+application/mac-binhex40	hqx HQX
+application/mac-compactpro	cpt CPT
+application/macwriteii
+application/marc
+application/mathematica
+application/msword		doc wrd DOC WRD
+application/news-message-id
+application/news-transmission
+application/octet-stream	bin dms lha lzh exe class iso dmg o BIN DMS \
+  LHA LZH EXE CLASS ISO DMG O
+application/oda			oda ODA
+application/pdf			pdf PDF
+application/pgp			pgp PGP
+application/pgp-encrypted
+application/pgp-keys
+application/pgp-signature	pgp PGP
+application/postscript		ai eps ps AI EPS PS
+application/remote-printing
+application/rss+xml		rss RSS
+application/rtf			rtf RTF
+application/sdp			sdp SDP
+application/slate
+application/smil		smi smil SMI SMIL
+application/visio		vsd vss vsw vtx VSD VSS VSW VTX
+application/vnd.lotus-1-2-3	123
+application/vnd.ms-excel	xls XLS
+application/vnd.ms-excel.addin.macroEnabled.12	xlam XLAM
+application/vnd.ms-excel.sheet.binary.macroEnabled.12	xlsb XLSB
+application/vnd.ms-excel.sheet.macroEnabled.12	xlsm XLSM
+application/vnd.ms-excel.template	xlt XLT
+application/vnd.ms-excel.template.macroEnabled.12	xltm XLTM
+application/vnd.ms-word.template	dot DOT
+application/vnd.ms-powerpoint	ppt PPT
+application/vnd.ms-powerpoint.addin.macroEnabled.12	ppam PPAM
+application/vnd.ms-powerpoint.presentation.macroEnabled.12	pptm PPTM
+application/vnd.ms-powerpoint.slideshow	pps PPS
+application/vnd.ms-powerpoint.slideshow.macroEnabled.12	ppsm PPSM
+application/vnd.ms-powerpoint.template	pot POT
+application/vnd.ms-powerpoint.template.macroEnabled.12	potm POTM
+application/vnd.ms-project	mpp MPP
+application/vnd.ms-word.document.macroEnabled.12	docm DOCM
+application/vnd.ms-word.template.macroEnabled.12	dotm DOTM
+application/vnd.oasis.opendocument.chart	odc ODC
+application/vnd.oasis.opendocument.chart-template	otc OTC
+application/vnd.oasis.opendocument.formula	odf ODF
+application/vnd.oasis.opendocument.graphics	odg ODG
+application/vnd.oasis.opendocument.graphics-template	otg OTG
+application/vnd.oasis.opendocument.image	odi ODI
+application/vnd.oasis.opendocument.image-template	oti OTI
+application/vnd.oasis.opendocument.presentation	odp ODP
+application/vnd.oasis.opendocument.presentation-template	otp OTP
+application/vnd.oasis.opendocument.spreadsheet	ods ODS
+application/vnd.oasis.opendocument.spreadsheet-template	ots OTS
+application/vnd.oasis.opendocument.text	odt ODT
+application/vnd.oasis.opendocument.text-master	odm ODM
+application/vnd.oasis.opendocument.text-template	ott OTT
+application/vnd.openxmlformats-officedocument.presentationml.presentation	pptx PPTX
+application/vnd.openxmlformats-officedocument.presentationml.template	potx POTX
+application/vnd.openxmlformats-officedocument.presentationml.slideshow	ppsx PPSX
+application/vnd.openxmlformats-officedocument.spreadsheetml.sheet	xlsx XLSX
+application/vnd.openxmlformats-officedocument.spreadsheetml.template	xltx XLTX
+application/vnd.openxmlformats-officedocument.wordprocessingml.document	docx DOCX
+application/vnd.openxmlformats-officedocument.wordprocessingml.template	dotx DOTX
+application/vnd.rn-realmedia	rm RM
+application/vnd.stardivision.calc	sdc SDC
+application/vnd.stardivision.draw	sda SDA
+application/vnd.stardivision.impress	sdd SDD
+application/vnd.stardivision.writer	sdw SDW
+application/vnd.sun.xml.writer	sxw SXW
+application/vnd.sun.xml.writer.template	stw STW
+application/vnd.sun.xml.writer.global	sxg SXG
+application/vnd.sun.xml.calc	sxc SXC
+application/vnd.sun.xml.calc.template	stc STC
+application/vnd.sun.xml.impress	sxi SXI
+application/vnd.sun.xml.impress.template	sti STI
+application/vnd.sun.xml.draw	sxd SXD
+application/vnd.sun.xml.draw.template	std STD
+application/vnd.sun.xml.math	sxm SXM
+application/vnd.wap.wbxml	wbxml WBXML
+application/vnd.wap.wmlc	wmlc WMLC
+application/vnd.wap.wmlscriptc	wmlsc WMLSC
+application/wita
+application/wordperfect	wpd WPD wp WP
+application/wordperfect5.1	wp5 WP5
+application/x-123		wk WK
+application/x-Wingz		wz WX
+application/x-bcpio		bcpio BCPIO
+application/x-bzip2		bz2 BZ2
+application/x-cdlink		vcd VCD
+application/x-chess-pgn		pgn PGN
+application/x-compress		z Z
+application/x-cpio		cpio CPIO
+application/x-csh		csh CSH
+application/x-debian-package	deb DEB
+application/x-director		dcr dir dxr DCR DIR DXR
+application/x-dvi		dvi DVI
+application/x-gtar		gtar tgz GTAR TGZ
+application/x-gunzip		gz GZ
+application/x-gzip		gz GZ
+application/x-hdf		hdf HDF
+application/java-archive	jar JAR war WAR ear EAR
+application/x-java-jnlp-file	jnlp JNLP
+application/x-javascript	js JS
+application/x-kword		kwd kwt KWD KWT
+application/x-kspread		ksp KSP
+application/x-kpresenter	kpr kpt KPR KPT
+application/x-kchart		chrt CHRT
+application/x-koan		skp skd skt skm SKP SKD SKT SKM
+application/x-latex		latex LATEX
+application/x-maker		frm maker frame fm fb book fbdoc FRM MAKER \
+  FRAME FM FB BOOK FBDOC
+application/x-mif		mif MIF
+application/x-msaccess		mdb MDB
+application/x-msdos-program	com exe bat COM EXE BAT
+application/x-netcdf		nc cdf NC CDF
+application/x-ns-proxy-autoconfig	pac PAC
+application/x-perl		pl pm PL PM
+application/x-rad		rad RAD
+application/x-rpm		rpm spm RPM SPM
+application/x-sdp		sdp SDP
+application/x-sh		sh SH
+application/x-shar		shar SHAR
+application/x-shockwave-flash	swf SWF
+application/x-shockwave-flash2-preview	rf swf RF SWF
+application/x-stuffit		sit SIT
+application/x-sv4cpio		sv4cpio SV4CPIO
+application/x-sv4crc		sv4crc SV4CRC
+application/x-tar		tar TAR
+application/x-tcl		tcl TCL
+application/x-tex		tex TEX
+application/x-texinfo		texinfo texi TEXINFO TEXI
+application/x-troff		t tr roff T TR ROFF
+application/x-troff-man		man MAN
+application/x-troff-me		me ME
+application/x-troff-ms		ms MS
+application/x-ustar		ustar USTAR
+application/x-wais-source	src SRC
+application/x-xmind		xmind XMIND
+application/xhtml+xml           xhtml xht XHTML XHT
+application/xml-dtd		dtd DTD
+application/zip			zip ZIP
+audio/basic			au snd AU SND
+audio/midi			mid midi kar MID MIDI KAR
+audio/mp4			m4a m4b m4p M4A M4B M4P
+audio/mpeg			mpga mp2 mp3 MPGA MP2 MP3
+audio/vnd.rn-realaudio		ra RA
+audio/x-mpegurl			m3u M3U
+audio/x-aiff			aif aifc aiff AIF AIFC AIFF
+audio/x-pn-realaudio		rmm ram RMM RAM
+audio/x-realaudio		ra RA
+audio/x-wav			wav WAV
+chemical/x-pdb			pdb PDB
+chemical/x-xyz			xyz XYZ
+image/bmp			bmp BMP
+image/gif			gif GIF
+image/ief			ief IEF
+image/jpeg			jpeg jpg jpe JPEG JPG JPE
+image/png			png PNG
+image/svg+xml			svg SVG
+image/tiff			tiff tif TIFF TIF
+image/vnd.djvu			djvu djv DJVU DJV
+image/vnd.rn-realflash		rf swf RF SWF
+image/vnd.rn-realpix		rp RP
+image/vnd.wap.wbmp		wbmp WBMP
+image/x-cmu-raster		ras RAS
+image/x-icon			ico ICO
+image/x-portable-anymap		pnm PNM
+image/x-portable-bitmap		pbm PBM
+image/x-portable-graymap	pgm PGM
+image/x-portable-pixmap		ppm PPM
+image/x-rgb			rgb RGB
+image/x-xbitmap			xbm XBM
+image/x-xpixmap			xpm XPM
+image/x-svm			svm SVM
+image/x-xwindowdump		xwd XWD
+message/external-body
+message/news
+message/partial
+message/rfc822
+model/iges			igs iges IGS IGES
+model/mesh			msh mesh silo MSH MESH SILO
+model/vrml			wrl vrml WRL VRML
+multipart/alternative
+multipart/appledouble
+multipart/digest
+multipart/mixed
+multipart/parallel
+text/css			css CSS
+text/csv			csv CSV
+text/html			html htm HTML HTM
+text/php			phtml pht php PHTML PHT PHP
+text/plain			txt asc c cc h hh cpp hpp java ASC TXT C CC H \
+  HH CPP HPP JAVA ent ENT afm AFM pfa PFA prop PROP props PROPS jsp JSP log \
+  LOG jj JJ sql SQL
+text/richtext			rtx RTX
+text/rtf			rtf RTF
+text/sgml			sgml sgm SGML SGM
+text/tab-separated-values	tsv TSV
+text/vnd.rn-realtext		rt RT
+text/x-setext			etx ETX
+text/x-vCalendar		vcs VCS
+text/x-vCard			vcf VCF
+text/xml			xml xsl fo XML XSL FO
+video/dl			dl DL
+video/fli			fli FLI
+video/gl			gl GL
+video/mp4			mp4 MP4
+video/mpeg			mp2 mpe mpeg mpg MP2 MPE MPEG MPG
+video/quicktime			qt mov QT MOV
+video/vnd.mpegurl		mxu MXU
+video/vnd.rn-realvideo		rv RV
+video/x-dv	dv DV
+video/x-flv	flv FLV
+video/x-m4v	m4v M4V
+video/x-ms-wmv	wmv WMV
+video/x-msvideo			avi AVI
+video/x-sgi-movie		movie MOVIE
+x-conference/x-cooltalk		ice ICE
+x-world/x-vrml			wrl vrml WRL VRML

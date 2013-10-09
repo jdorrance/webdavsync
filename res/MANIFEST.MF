@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Main-Class: be.re.webdav.cmd.Sync
+Implementation-Title: WebDAV-Sync
+Implementation-Version: 1.1.4
+Implementation-Vendor: Pincette bvba
